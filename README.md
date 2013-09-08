@@ -29,3 +29,5 @@ This kata will need to be tested in to ways.
 2.  You must also verify that the table in index.html, is behaving well. Click on the link at the bottom of the page.
 
 If both these test suites are successful, then you have reached the next level in AngularJS :-)
+
+You can check out the solution by cloning the 'solution' branch of this repository.
