@@ -12,18 +12,23 @@ describe('HomeController tests', function () {
         module('Kata');
     });
 
-    describe('Test that HomeController provides a Service with a ToDo list', function () {
+    describe('Test that HomeController provides a Service with a Todo list', function () {
 
         var scope;
+        var todoService;
 
         beforeEach(inject(function ($controller, $rootScope, TodoService) {
             scope = $rootScope.$new();
-            var todoService = TodoService;
+            todoService = TodoService;
             $controller('kata.home.HomeController', {
                 $scope: scope,
                 TodoService: todoService
             });
         }));
+
+        it("should have a service named TodoService"), function() {
+            expect(todoService).not.toBe(null);
+        }
 
         it('should get a list of ToDos from the service', function () {
 
