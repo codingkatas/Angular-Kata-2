@@ -8,9 +8,8 @@
 
 namespace('kata.home');
 
-kata.home.HomeController = function ($scope) {
-    //Add the TodoService to the function declaration, like $scope, to get it injected into this controller.
-    //Assign the TodoService to the scope. Call the scope variable "todoService"
-    //Notice the change in index.html, when looping over the todoList in ng-repeat.
+
+kata.home.HomeController = function ($scope, TodoService) {
+    $scope.todos = TodoService.getTodoList();
 };
 

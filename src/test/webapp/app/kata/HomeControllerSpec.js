@@ -32,8 +32,7 @@ describe('HomeController tests', function () {
 
         it('should get a list of ToDos from the service', function () {
 
-            var todos = scope.todoService.todoList;
-
+            var todos = scope.todos;
             expect(todos.length).toBe(3);
         });
     });

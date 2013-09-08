@@ -5,7 +5,7 @@
 describe('Kata 2', function () {
 
     beforeEach(function () {
-        browser().navigateTo('../index.html');
+        browser().navigateTo('http://localhost:8080/Angular-Kata-2/');
     });
 
     it('should show a list of three todos from the TodoService in a html table', function () {

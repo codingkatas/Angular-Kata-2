@@ -25,8 +25,8 @@
         <!-- The app code itself. You must use the code from HomeController.js -->
         <script src="app/kata/util.js"></script>
         <script src="app/kata/app.js"></script>
-        <script src="app/kata/HomeController.js"></script>
         <script src="app/kata/TodoService.js"></script>
+        <script src="app/kata/HomeController.js"></script>
 
 
     </head>
@@ -55,7 +55,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr ng-repeat="todo in [EnterTheServiceOnTheScope.todoList]">
+                        <tr ng-repeat="todo in todos">
                             <td>{{ todo.subject }}</td>
                             <td><input type="checkbox" ng-model="todo.done"></td>
                         </tr>
